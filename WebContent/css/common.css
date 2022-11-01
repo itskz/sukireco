@@ -1,0 +1,1001 @@
+@charset "UTF-8";
+
+/* 共通部分 */
+/* 全称セレクタ（ユニバーサルセレクタ）は、アスタリスク（*）を
+   記述してすべての要素を対象にスタイルを適用するセレクタ */
+* {
+	/*余白や線を幅や高さに含める*/
+	box-sizing: border-box;
+}
+
+
+.logo {
+	font-size: 250%;
+	font-family: 'Bebas Neue', cursive;
+	font-style: italic;
+	transform: skewX(23deg);
+	line-height: 1;
+}
+
+.logo-subtitle {
+	display: block;
+	font-family: sans-serif;
+	width: 100%;
+	transform: skewX(-23deg);
+	letter-spacing: 1em;
+	font-size: 13px;
+	background-color: rgb(255, 255, 255);
+	text-shadow: none;
+	text-align: center;
+	color: rgb(34, 193, 255);
+	font-style: normal
+}
+
+.area-box-home {
+	border-radius: 30px;
+	padding: 50px;
+    margin-top:50px;
+	width: 100%;
+	background: rgb(224, 224, 224);
+	border: 6px solid #39e5ff;
+
+	z-index: 990;
+}
+
+.bought{
+width: 150px;
+
+}
+
+
+
+.cart-icon a{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 150px;
+	/* 枠の指定 */
+	text-decoration: none;
+}
+
+jsp {
+	/*ユーザー設定の文字サイズを正しく反映*/
+	font-size: 100%;
+}
+
+header a {
+	text-decoration: none;
+	margin-left: 6px;
+	color: rgb(255, 255, 255);
+	text-shadow: 1px 2px 1px #515151;
+}
+
+nav a:hover {
+	color: #00bfff;
+}
+
+footer p {
+	margin: 0;
+	color: rgb(255, 255, 255);
+	font-size: 28px;
+	font-weight: bolder;
+	font-family: 'Bebas Neue', cursive;
+	font-style: italic;
+	transform: skewX(23deg);
+}
+
+.account-name{
+	color:white;
+}
+
+.cart-number{
+	color: white;
+}
+
+
+#home img {
+	/*画像が親要素からはみ出すのを防ぐ*/
+	max-width: 180px;
+	height: auto;
+	align-items: center;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	/* background : repeating-linear-gradient(45deg,
+    rgba(130, 130, 255, 0.16),
+    rgba(130, 130, 255, 0.16) 10px,
+    rgba(255, 255, 255, 0.68) 0,
+    rgba(255, 255, 255, 0.68) 20px); */
+	background-color: rgba(236, 254, 255, 0.5);
+}
+
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 80px;
+	/*グラデーション*/
+	background: linear-gradient(to right, rgba(69, 179, 224, 1) 25%,
+		rgb(76, 79, 161) 75%);
+	padding: 0 2%;
+	/*ロゴとulを横に並べる*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-decoration: none;
+	z-index: 999;
+	background: linear-gradient(to right, rgba(69, 179, 224, 1) 25%,
+		rgb(76, 79, 161) 75%)
+}
+
+
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 0 50px;
+	flex: 1;
+	width: 100%;
+	height: 380px;
+	margin-top: 100px;
+
+	background-color: #d3d3d3;
+	border-radius: 70px;
+	text-align: center;
+	z-index: 0;
+
+}
+
+.wrapper p {
+	color: black;
+}
+
+.section {
+	display: flex;
+	flex-direction: column;
+}
+
+/* オススメとmusic-listを縦並び */
+.music-list-recomend{
+	display: flex;
+	flex-direction: column;
+}
+
+/* オススメとmusic-listを縦に */
+.music-list-container{
+	display: flex;
+	flex-direction:column;
+
+}
+
+.music-list{
+margin: 0 20px;
+}
+
+
+.music-list-name a{
+	/* 枠の指定 */
+	text-decoration: none;
+}
+
+.music-list-wrapper{
+	display: flex;
+	/*  上下で下に合わせる */
+	align-items: flex-end;
+}
+
+table {
+	background: transparent;
+}
+
+td {
+	height: 300px;
+	justify-content: space-evenly;
+}
+
+input {
+	font-size: 15px;
+}
+
+.container ul {
+	/* 縦並びの要素を横並びにする */
+	display: flex;
+	/* 右揃え */
+	justify-content: flex-end;
+	list-style-type: none;
+	padding: 0;
+}
+
+.container .container-btn {
+	justify-content: center;
+}
+
+.container-btn li {
+	margin: 0 10px;
+}
+
+footer {
+	position: fixed;
+	/*下に固定*/
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	/*グラデーション*/
+	background: linear-gradient(to right, rgba(69, 179, 224, 1) 25%,
+		rgb(65, 68, 156) 75%);
+	z-index: 999;
+}
+
+small {
+	color: wheat;
+}
+
+/* navigation.jsp */
+
+/* login.jsp */
+.container h1 {
+	text-align: center;
+}
+
+.container .set {
+	text-align: center;
+}
+
+header h1 {
+	font-weight: bolder;
+	font-style: italic;
+}
+
+.login-tab {
+	display: inline-block;
+	border-radius: 5%;
+	/* 角丸       */
+	font-size: 10pt;
+	/* 文字サイズ */
+	text-align: center;
+	/* 文字位置   */
+	cursor: pointer;
+	/* カーソル   */
+	padding: 5px 8px;
+	/* 余白       */
+	background: #ff6868;
+	/* 背景色     */
+	color: #ffffff;
+	/* 文字色     */
+	line-height: 1em;
+	/* 1行の高さ  */
+	transition: .3s;
+	/* なめらか変化 */
+	box-shadow: 2px 3px 2px #666666;
+	/* 影の設定 */
+	border: 2px solid #ff6b6b;
+	/* 枠の指定 */
+	text-decoration: none;
+	z-index: 900;
+}
+
+.login-tab:hover {
+	box-shadow: none;
+	/* カーソル時の影消去 */
+	color: #ff7676;
+	/* 背景色     */
+	background: #ffffff;
+	/* 文字色     */
+}
+
+.set2 {
+	text-align: center;
+}
+
+.login-img {
+	width: 12%;
+	position: absolute;
+	transform: translateX(-50%) translateY(-50%);
+	top: 25%;
+	left: 70%;
+}
+
+.login-img {
+	animation-name: fadeUpAnime;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+
+@keyframes fadeUpAnime {from { opacity:0;
+	transform: translateY(100px);
+}
+
+to {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+}
+.img-box img {
+	z-index: -1;
+}
+
+.CD-Jacket1 {
+	width: 8%;
+	position: absolute;
+	transform: translateX(-50%) translateY(-50%);
+	top: 25%;
+	left: 7%;
+	opacity: 0.3;
+}
+
+.CD-Jacket2 {
+	width: 8%;
+	position: absolute;
+	transform: translateX(-50%) translateY(-50%);
+	top: 45%;
+	left: 18%;
+	opacity: 0.3;
+}
+
+.CD-Jacket3 {
+	width: 8%;
+	position: absolute;
+	transform: translateX(-50%) translateY(-50%);
+	top: 90%;
+	left: 25%;
+	opacity: 0.3;
+}
+
+.CD-Jacket4 {
+	width: 11%;
+	position: absolute;
+	transform: translateX(-50%) translateY(-50%);
+	top: 78%;
+	left: 10%;
+	opacity: 0.3;
+}
+
+.CD-Jacket5 {
+	width: 6%;
+	position: absolute;
+	transform: translateX(-50%) translateY(-50%);
+	top: 75%;
+	left: 35%;
+	opacity: 0.4;
+}
+
+.CD-Jacket6 {
+	width: 9%;
+	position: absolute;
+	transform: translateX(-50%) translateY(-50%);
+	top: 80%;
+	left: 55%;
+	opacity: 0.4;
+}
+
+.CD-Jacket7 {
+	width: 9%;
+	position: absolute;
+	transform: translateX(-50%) translateY(-50%);
+	top: 95%;
+	left: 70%;
+	opacity: 0.5;
+}
+
+.CD-Jacket8 {
+	width: 9%;
+	position: absolute;
+	transform: translateX(-50%) translateY(-50%);
+	top: 15%;
+	left: 80%;
+	opacity: 0.5;
+}
+
+.CD-Jacket9 {
+	width: 6%;
+	position: absolute;
+	transform: translateX(-50%) translateY(-50%);
+	top: 25%;
+	left: 90%;
+	opacity: 0.3;
+}
+
+.CD-Jacket10 {
+	width: 6%;
+	position: absolute;
+	transform: translateX(-50%) translateY(-50%);
+	top: 35%;
+	left: 85%;
+	opacity: 0.3;
+}
+
+.CD-Jacket11 {
+	width: 8%;
+	position: absolute;
+	transform: translateX(-50%) translateY(-50%);
+	top: 65%;
+	left: 90%;
+	opacity: 0.4;
+}
+
+.CD-Jacket12 {
+	width: 6%;
+	position: absolute;
+	transform: translateX(-50%) translateY(-50%);
+	top: 90%;
+	left: 97%;
+	opacity: 0.3;
+}
+
+.CD-Jacket13 {
+	width: 9%;
+	position: absolute;
+	transform: translateX(-50%) translateY(-50%);
+	top: 9%;
+	left: 40%;
+	opacity: 0.3;
+}
+
+/* createAccount */
+p.account {
+	font-size: 28px;
+}
+
+.A {
+	width: 10%;
+	position: absolute;
+	transform: translateX(-50%) translateY(-50%);
+	top: 32%;
+	left: 18%;
+}
+
+.B {
+	width: 10%;
+	position: absolute;
+	transform: translateX(-50%) translateY(-50%);
+	top: 32%;
+	left: 85%;
+}
+
+.C {
+	width: 10%;
+	position: absolute;
+	transform: translateX(-50%) translateY(-50%);
+	top: 80%;
+	left: 25%;
+}
+
+.D {
+	width: 10%;
+	position: absolute;
+	transform: translateX(-50%) translateY(-50%);
+	top: 75%;
+	left: 75%;
+}
+
+.container {
+	/* 縦並びの要素を横並びにする */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: calc(100vh - 24px);
+}
+
+.second-container {
+
+	/* 上右下左 */
+	margin: 100px 0 30px 0;
+}
+
+.youtube-trush-icon {
+	display: flex;
+}
+
+/* adominMenu.jsp  */
+.link-tab-A {
+	display: inline-block;
+	border-radius: 10%;
+	/* 角丸 */
+	font-size: 18pt;
+	/* 文字サイズ */
+	text-align: center;
+	/* 文字位置 */
+	cursor: pointer;
+	/* カーソル*/
+	padding: 10px 10px;
+	/* 余白 */
+	background: #52ff45;
+	/* 背景色 */
+	color: #ffffff;
+	/* 文字色  */
+	line-height: 1em;
+	/* 1行の高さ  */
+	transition: .3s;
+	/* なめらか変化 */
+	box-shadow: 6px 6px 3px #9a9a9a;
+	/* 影の設定 */
+	border: 3px solid greenyellow;
+	/* 枠の指定 */
+	text-decoration: none;
+}
+
+.link-tab-A:hover {
+	box-shadow: none;
+	/* カーソル時の影消去 */
+	color: #535357;
+	/* 背景色     */
+	background: #ffffff;
+	/* 文字色     */
+}
+
+.link-tab-B {
+	display: inline-block;
+	border-radius: 10%;
+	/* 角丸 */
+	font-size: 18pt;
+	/* 文字サイズ */
+	text-align: center;
+	/* 文字位置 */
+	cursor: pointer;
+	/* カーソル*/
+	padding: 10px 10px;
+	/* 余白 */
+	background: #ffbc35;
+	/* 背景色 */
+	color: #ffffff;
+	/* 文字色  */
+	line-height: 1em;
+	/* 1行の高さ  */
+	transition: .3s;
+	/* なめらか変化 */
+	box-shadow: 6px 6px 3px #9a9a9a;
+	/* 影の設定 */
+	border: 3px solid #ff8205;
+	/* 枠の指定 */
+	text-decoration: none;
+}
+
+.link-tab-B:hover {
+	box-shadow: none;
+	/* カーソル時の影消去 */
+	color: #535357;
+	/* 背景色     */
+	background: #ffffff;
+	/* 文字色     */
+}
+
+.Artistregister {
+	text-align: center;
+	margin-top: 50%;
+	font-size: 25px;
+}
+
+.Musicregister {
+	text-align: center;
+	margin-top: 20%;
+	font-size: 25px;
+}
+
+.leftbox {
+	position: absolute;
+	transform: translateX(-50%) translateY(-60%);
+	top: 65%;
+	left: 27%;
+	border-radius: 30px;
+	margin: auto;
+	width: 28%;
+	height: 35%;
+	background: rgb(224, 224, 224);
+	border: 6px solid greenyellow;
+}
+
+.leftbox a {
+	position: absolute;
+	transform: translateX(-50%) translateY(-60%);
+	top: 50%;
+	left: 50%;
+	width: 60%;
+}
+
+.rightbox {
+	position: absolute;
+	transform: translateX(-50%) translateY(-60%);
+	top: 65%;
+	left: 75%;
+	border-radius: 30px;
+	margin: auto;
+	width: 28%;
+	height: 35%;
+	background: rgb(224, 224, 224);
+	border: 6px solid #ff8205;
+}
+
+.rightbox a {
+	position: absolute;
+	transform: translateX(-50%) translateY(-60%);
+	top: 50%;
+	left: 50%;
+	width: 50%;
+}
+
+.mike {
+	position: absolute;
+	transform: translateX(-50%) translateY(-60%);
+	top: 0%;
+	left: 100%;
+	width: 40%;
+	z-index: 100;
+}
+
+.sing {
+	position: absolute;
+	transform: translateX(-50%) translateY(-60%);
+	top: 5%;
+	left: -1%;
+	width: 40%;
+	z-index: 100;
+}
+
+/* cart.jsp  */
+.music-info-img{
+width: 200px;
+}
+
+.music-info-element img {
+	height: 180px;
+	padding: 5px;
+}
+
+.music-info-element {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+
+	/* padding-top: 50px; */
+}
+
+.music-name {
+	width: 150px;
+}
+
+.artist-name{
+	width: 140px;
+}
+
+.CD-price {
+	width: 150px;
+}
+
+.area-box {
+	border-radius: 30px;
+	padding: 50px;
+	margin: auto;
+	width: 75%;
+	background: rgb(224, 224, 224);
+	border: 6px solid #39e5ff;
+	margin-bottom: 50px;
+	z-index: 990;
+}
+
+.youtube-link {
+	margin: 0 10px;
+	/* 角丸 */
+	border-radius: 25%;
+	/* 文字サイズ */
+	font-size: 10pt;
+	/* 文字位置 */
+	text-align: center;
+	/* カーソル*/
+	cursor: pointer;
+	/* 余白 */
+	padding: 5px 12px;
+	/* 背景色 */
+	background: #ff0000;
+	/* 文字色  */
+	color: #ffffff;
+	/* 1行の高さ  */
+	line-height: 1em;
+	/* なめらか変化 */
+	transition: .3s;
+	/* 枠の指定 */
+	border: 3px solid none;
+	text-decoration: none;
+}
+
+.youtube-link:hover {
+	/* カーソル時の影消去 */
+	box-shadow: none;
+	/* 文字色     */
+	color: #ff0000;
+	/* 背景色     */
+	background: #ffffff;
+}
+
+.youtube-link .fa-solid:hover {
+	/* カーソル時の影消去 */
+	box-shadow: none;
+	/* 文字色     */
+	color: #ff0000;
+	/* 背景色     */
+	background: #ffffff;
+}
+
+.fa-solid {
+	color: white;
+}
+
+.fa-trash-alt:before, .fa-trash-can:before {
+	content: "\f2ed";
+	color: blue;
+}
+
+
+.area-box h2 {
+	text-align: center;
+}
+
+.empty-cart {
+	display: inline-block;
+	/* 角丸       */
+	border-radius: 10%;
+	/* 文字サイズ */
+	font-size: 12pt;
+	/* 文字位置   */
+	text-align: center;
+	/* カーソル   */
+	cursor: pointer;
+	/* 余白       */
+	padding: 5px 5px;
+	/* 背景色     */
+	background: #ff7676;
+	/* 文字色     */
+	color: #ffffff;
+	/* 1行の高さ  */
+	line-height: 1em;
+	/* なめらか変化 */
+	transition: .3s;
+	/* 影の設定 */
+	box-shadow: 2px 3px 2px #666666;
+	/* 枠の指定 */
+	border: 2px solid #ff7f7f;
+	text-decoration: none;
+	margin-left: 10px;
+}
+
+.empty-cart:hover {
+	box-shadow: none;
+	/* カーソル時の影消去 */
+	color: #ff7676;
+	/* 背景色     */
+	background: #ffffff;
+	/* 文字色     */
+}
+
+.regi-tab {
+	display: inline-block;
+	/* 角丸       */
+	border-radius: 10%;
+	/* 文字サイズ */
+	font-size: 12pt;
+	/* 文字位置   */
+	text-align: center;
+	/* カーソル   */
+	cursor: pointer;
+	/* 余白       */
+	padding: 5px 5px;
+	/* 背景色     */
+	background: #ff7676;
+	/* 文字色     */
+	color: #ffffff;
+	/* 1行の高さ  */
+	line-height: 1em;
+	/* なめらか変化 */
+	transition: .3s;
+	/* 影の設定 */
+	box-shadow: 2px 3px 2px #666666;
+	/* 枠の指定 */
+	border: 2px solid #ff7f7f;
+	text-decoration: none;
+}
+
+.regi-tab:hover {
+	box-shadow: none;
+	/* カーソル時の影消去 */
+	color: #ff7676;
+	/* 背景色     */
+	background: #ffffff;
+	/* 文字色     */
+}
+
+.total-price {
+	z-index: 970;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.fix{
+display: inline-block;
+	/* 角丸       */
+	border-radius: 10%;
+	/* 文字サイズ */
+	font-size: 12pt;
+	/* 文字位置   */
+	text-align: center;
+	/* カーソル   */
+	cursor: pointer;
+	/* 余白       */
+	padding: 5px 5px;
+	/* 背景色     */
+	background: #ff7676;
+	/* 文字色     */
+	color: #ffffff;
+	/* 1行の高さ  */
+	line-height: 1em;
+	/* なめらか変化 */
+	transition: .3s;
+	/* 影の設定 */
+	box-shadow: 2px 3px 2px #666666;
+	/* 枠の指定 */
+	border: 2px solid #ff7f7f;
+	margin-left:10px;
+	text-decoration: none;
+}
+
+.fix:hover{
+	box-shadow: none;
+	/* カーソル時の影消去 */
+	color: #ff7676;
+	/* 背景色     */
+	background: #ffffff;
+	/* 文字色     */
+}
+
+/* paymentConfirm */
+.area-box2 {
+	border-radius: 30px;
+	padding: 50px;
+	margin: auto;
+	width: 75%;
+	background: rgb(224, 224, 224);
+	border: 6px solid #39e5ff;
+	margin-bottom: 50px;
+	z-index: 990;
+	border: 6px solid #ffaa29;
+}
+
+
+
+.area-box2 h1{
+	text-align: center;
+}
+
+.area-box2 h2 {
+	color: red;
+	margin: 0;
+}
+
+.area-box2 h3 {
+	margin-bottom: 10px;
+}
+
+.area-box2 a {
+	text-align: center;
+}
+
+/* purchaseHistory.jsp */
+.area-box3 {
+	border: 6px solid #3df929;
+}
+
+.area-box3 h1 {
+	text-align: center;
+}
+
+.area-box3 a {
+	text-align: center;
+}
+
+.material-icons-round {
+	color: blue;
+}
+
+a.music-link {
+	position: absolute;
+	transform: translateX(-50%) translateY(-60%);
+	top: 90%;
+	left: 70%;
+	display: inline-block;
+	/* 角丸       */
+	border-radius: 10%;
+	/* 文字サイズ */
+	font-size: 12pt;
+	/* 文字位置   */
+	text-align: center;
+	/* カーソル   */
+	cursor: pointer;
+	/* 余白       */
+	padding: 5px 5px;
+	/* 背景色     */
+	background: #ff7676;
+	/* 文字色     */
+	color: #ffffff;
+	/* 1行の高さ  */
+	line-height: 1em;
+	/* なめらか変化 */
+	transition: .3s;
+	/* 影の設定 */
+	box-shadow: 2px 3px 2px #666666;
+	/* 枠の指定 */
+	border: 2px solid #ff7f7f;
+	text-decoration: none;
+}
+
+a.music-link:hover {
+	box-shadow: none;
+	/* カーソル時の影消去 */
+	color: #ff7676;
+	/* 背景色     */
+	background: #ffffff;
+	/* 文字色     */
+}
+
+a.music-explanation {
+	position: absolute;
+	transform: translateX(-50%) translateY(-60%);
+	top: 90%;
+	left: 85%;
+	display: inline-block;
+	/* 角丸       */
+	border-radius: 10%;
+	/* 文字サイズ */
+	font-size: 12pt;
+	/* 文字位置   */
+	text-align: center;
+	/* カーソル   */
+	cursor: pointer;
+	/* 余白       */
+	padding: 5px 5px;
+	/* 背景色     */
+	background: #ff7676;
+	/* 文字色     */
+	color: #ffffff;
+	/* 1行の高さ  */
+	line-height: 1em;
+	/* なめらか変化 */
+	transition: .3s;
+	/* 影の設定 */
+	box-shadow: 2px 3px 2px #666666;
+	/* 枠の指定 */
+	border: 2px solid #ff7f7f;
+	text-decoration: none;
+}
+
+a.music-explanation:hover {
+	box-shadow: none;
+	/* カーソル時の影消去 */
+	color: #ff7676;
+	/* 背景色     */
+	background: #ffffff;
+	/* 文字色     */
+}
+
+@media (pointer: coarse),
+(hover: none) {
+    .tooltip[title] {
+        position: relative;
+        display: inline-flex;
+        justify-content: center;
+    }
+
+    .tooltip[title]:focus::after {
+        content: attr(title);
+        position: absolute;
+        top: 90%;
+        color: #000;
+        background-color: #fff;
+        border: 1px solid;
+        width: fit-content;
+        padding: 3px;
+    }
+}

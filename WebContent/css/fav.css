@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+.mi {
+	margin-top: 80px;
+	margin-bottom: 24px;
+	text-align: center;
+}
+
+.NA_article_header .NA_share {
+	float: right;
+	width: 341px;
+	margin: 15px 20px 0 0;
+}
+
+.NA_article_data {
+	float: right;
+}
+
+.NA_share_btn {
+	display: flex;
+	justify-content:center;
+
+	/* 	margin: 0; */
+}
+
+.NA_share_btn li {
+	/* 	position: relative; */
+	/* 	display: table-cell; */
+	/* 	overflow: hidden; */
+	/* 	vertical-align: top; */
+	/* box-sizing: border-box; */
+	display: flex;
+	justify-content: center;
+	margin: 10px 0;
+}
+
+.NA_share_tw {
+	padding-right: 10px;
+	padding-left: 10px;
+
+}
+
+.aboutrecommend {
+/* 	display: block; */
+	text-align:justify;
+	margin-left:200px;
+	margin-right:200px;
+	text-indent: 1em;
+}
+
+.NA_article_body {
+	margin: 0 auto;
+	text-align: center;
+}
+
+
